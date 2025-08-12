@@ -44,6 +44,7 @@
     --fs-17: 1.06rem;
     --fs-18: 1.12rem;
     --fs-20: 1.25rem;
+    --fs-22:1.37rem;
     --fs-24: 1.5rem;
     --fs-40: 2.5rem;
     --fs-70: 4.37rem;
@@ -217,11 +218,15 @@ a:hover {
 /* Main & Navbar */
 
 .navbar {
-    padding: 1.87rem 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    gap: 1.25rem;
+    padding: 1.25rem 2.5rem;
 }
 
 .nav-links {
-    gap: 43px;
+    gap: 2.68rem;
 }
 
 .nav-links a {
@@ -261,7 +266,7 @@ a:hover {
 
 .menu-toggler span {
     min-width: 100%;
-    height: 2px;
+    height: 0.13rem;
     display: block;
     background-color: var(--black);
 }
@@ -274,7 +279,7 @@ a:hover {
 
 .hero-left {
     flex: 1;
-    top: 15.62rem;
+    top: -3.12rem;
     height: auto;
 }
 
@@ -287,9 +292,8 @@ a:hover {
 }
 
 .hero-right {
-    margin-top: 7.5rem;
+    margin-top: 14.37rem;
     flex: 1;
-    height: auto;
 }
 
 .hero-right a>span {
@@ -336,6 +340,10 @@ a:hover {
     border-radius: 2.5rem;
     border: 1px solid rgba(0, 0, 0, 0.28);
     padding: 0.8rem 1rem;
+    font-size: var(--fs-20);
+    font-weight: var(--font-weight-500);
+    line-height: var(--line-height-100);
+    color: var(--parpel);
 }
 
 .search-bar img {
@@ -353,6 +361,10 @@ a:hover {
 }
 
 .rating>p {
+    font-size: var(--fs-20);
+    font-weight: var(--font-weight-600);
+    line-height: var(--line-height-100);
+    color: var(--parpel);
     margin-left: 1.31rem;
 }
 
@@ -365,9 +377,9 @@ a:hover {
 }
 
 .trust-badge {
-    font-size: 0.9rem;
+    font-size: var(--fs-16);
     font-weight: var(--font-weight-500);
-    right: 0rem;
+    right: 2.5rem;
     gap: 0.81rem;
 }
 
@@ -388,7 +400,8 @@ a:hover {
     margin: 3.56rem 0 2.06rem 0;
 }
 
-.exclusive>p {
+.exclusive>p,
+.food-box span {
     font-size: var(--fs-18);
     font-weight: var(--font-weight-400);
     line-height: var(--line-height-28);
@@ -447,8 +460,7 @@ a:hover {
 
 .swiper-slide h3,
 .swiper-slide p {
-    width: 15.62rem;
-    padding: 0 2.75rem 0 1rem;
+    width: 14.68rem;
 }
 
 .swiper-slide h3 {
@@ -467,14 +479,14 @@ a:hover {
 }
 
 .swiper-slide button {
-    width: 6rem;
+    padding: 0.43rem 0.87rem;
     height: 2.25rem;
     background-color: var(--yellow);
     color: var(--white);
     border: none;
     border-radius: 1.12rem;
-    margin-left: 1rem;
     margin-top: 0.81rem;
+    font-size: var(--fs-22);
 }
 
 .swiper-button-prev,
@@ -502,7 +514,7 @@ a:hover {
     padding: 3.31rem 0 6.5rem 0;
 }
 
-.serve-wrepper>p {
+.serve-wrepper p:nth-child(1) {
     font-size: var(--fs-20);
     font-weight: var(--font-weight-500);
     line-height: var(--line-height-100);
@@ -532,12 +544,17 @@ a:hover {
     color: var(--black-2);
 }
 
-.serve-card img {
+.serve-card img{
     margin-top: 4.25rem;
+    height: 11.56rem;
+    margin-bottom: 2.5rem;
+}
+.card-2 img{
+    height: 13.68rem;
 }
 
 .serve-card {
-    column-gap: 8.75rem;
+    column-gap: 9.87rem;
 }
 
 .serve-card h3 {
@@ -545,7 +562,7 @@ a:hover {
     font-weight: var(--font-weight-700);
     line-height: var(--line-height-100);
     color: var(--primary);
-    margin-top: 1.12rem;
+    margin-bottom: 1.06rem;
 }
 
 .serve-card p {
@@ -650,7 +667,177 @@ a:hover {
 }
 
 
-@media screen and (max-width:1200px) {
+/* @media screen */
+
+@media (max-width: 575.98px) {
+
+    /* main benner */
+
+    .benner-wrreper {
+        height: 28.12rem;
+    }
+    
+    .nav-links,
+    .nav-vectors {
+        display: none;
+    }
+
+    .menu-toggler {
+        display: flex;
+    }
+
+    .hero-right {
+        margin-top: 8.75rem;
+    }
+
+    .hero-right>a {
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-right a>img {
+        width: 0.93rem;
+    }
+
+    .hero-right a>span {
+        font-size: 0.75rem;
+    }
+
+    .heading {
+        font-size: 1.25rem;
+        margin-bottom: 0.62rem;
+    }
+
+    .benner-pera {
+        font-size: 0.5rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-bottom: 1.87rem;
+    }
+
+    .search-bar input {
+        font-size: 0.62rem;
+        height: 2.5rem;
+    }
+
+    .search-bar img {
+        left: 55%;
+        height: 1.87rem;
+        width: 1.87rem;
+    }
+
+    .rating img {
+        width: 1.12rem;
+    }
+
+    .rating p {
+        font-size: 0.62rem;
+    }
+
+    .trust-badge img{
+        padding: 0.18rem;
+    }
+    .trust-badge {
+        right: 3.12rem;
+    }
+
+    .hero-left {
+        top: 13.75rem;
+        width: 6.25rem;
+        height: 6.62rem;
+    }
+    .hero-left .burger{
+        width: 13.75rem;
+    }
+    .hero-left .round{
+        width: 6.56rem;
+    }
+
+    /* Exclusive */
+
+    .exclusive h2 {
+        font-size: 0.87rem;
+        margin-bottom: 0.62rem;
+        margin-top: 1.87rem;
+    }
+
+    .exclusive>p,
+    .food-box span,
+    .swiper-slide h3 {
+        font-size: 0.75rem;
+    }
+
+    .foods {
+        margin-bottom: 2.12rem;
+    }
+
+    .swiper-slide img {
+        width: 7.12rem;
+    }
+
+    .swiper-slide p {
+        font-size: 0.5rem;
+        width: 9.12rem;
+    }
+
+    .swiper-slide button {
+        font-size: 0.62rem;
+        width: 4.37rem;
+        padding: 0.06rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        --swiper-navigation-size: 1.25rem;
+        --swiper-navigation-top-offset: 30%;
+        --swiper-navigation-sides-offset: 0px;
+    }
+
+    /* serve */
+
+    .serve-wrepper>p{
+        font-size: 0.62rem;
+    }
+    .serve-wrepper h2{
+        font-size: 0.75rem;
+        margin-bottom: 0px;
+    }
+    .serve-pera{
+        display: none;
+    }
+    .serve-card img{
+        width: 7.18rem;
+    }
+    .serve-card h3{
+        font-size: 0.75rem;
+    }
+    .serve-card p{
+        font-size: 0.62rem;
+    }
+
+    /* Download */
+    .download{
+        display: none;
+    }
+
+    /* Footer */
+    .footer-pera{
+        font-size: 0.5rem;
+    }
+    .footer-links{
+        font-size: 0.62rem;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    /* main benner */
+
+    .benner-wrreper {
+        height: 28.12rem;
+    }
 
     .nav-links,
     .nav-vectors {
@@ -660,90 +847,617 @@ a:hover {
     .menu-toggler {
         display: flex;
     }
-}
 
-@media (max-width: 576px) {
-    .hero {
-        height: 31.25rem;
+    .hero-right {
+        margin-top: 8.75rem;
     }
 
-    .hero-left .burger {
-        max-width: 100%;
+    .hero-right>a {
+        margin-bottom: 1.87rem;
     }
 
-    .hero-left .round {
-        max-width: 70%;
+    .hero-right a>img {
+        width: 1.12rem;
     }
 
-    .iphone {
+    .hero-right a>span {
+        font-size: 1rem;
+    }
+
+    .heading {
+        font-size: 1.56rem;
+        margin-bottom: 0.93rem;
+    }
+
+    .benner-pera {
+        font-size: 0.75rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-bottom: 1.87rem;
+    }
+
+    .search-bar input {
+        font-size: 0.75rem;
+        height: 2.5rem;
+    }
+
+    .search-bar img {
+        left: 60%;
+        height: 1.87rem;
+        width: 1.87rem;
+    }
+
+    .rating img {
+        width: 1.37rem;
+    }
+
+    .rating>p {
+        font-size: 0.75rem;
+    }
+    .trust-badge img{
+        padding: 0.31rem;
+    }
+
+    .trust-badge p{
+        right: 3.12rem;
+        font-size: 0.62rem;
+    }
+
+    .hero-left {
+        top: 15.93rem;
+        width: 4.37rem;
+        height: 6.62rem;
+    }
+    .hero-left .burger{
+        width: 15.62rem;
+    }
+    .hero-left .round{
+        width: 10.62rem;
+    }
+
+    /* Exclusive */
+
+    .exclusive h2 {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+        margin-top: 2.18rem;
+    }
+
+    .exclusive>p,
+    .food-box span,
+    .swiper-slide h3 {
+        font-size: 0.87rem;
+    }
+
+    .foods {
+        margin-bottom: 2.5rem;
+    }
+
+    .swiper-slide img {
+        width: 7.5rem;
+    }
+
+    .swiper-slide p {
+        font-size: 0.62rem;
+        width: 9.12rem;
+    }
+
+    .swiper-slide button {
+        font-size: 0.75rem;
+        width: 5rem;
+        padding: 0.12rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        --swiper-navigation-size: 1.56rem;
+        --swiper-navigation-top-offset: 30%;
+        --swiper-navigation-sides-offset: 0px;
+    }
+
+    /* serve */
+
+    .serve-wrepper>p{
+        font-size: 0.75rem;
+    }
+    .serve-wrepper h2{
+        font-size: 0.93rem;
+        margin-bottom: 0px;
+    }
+    .serve-pera{
         display: none;
     }
-}
-
-@media (max-width: 768px) {
-    .hero {
-        height: 31.25rem;
+    
+    .serve-card img{
+        width: 7.5rem;
+    }
+    .serve-card h3{
+        font-size: 0.87rem;
+    }
+    .serve-card p{
+        font-size: 0.62rem;
     }
 
-    .hero-left .burger {
-        max-width: 100%;
-    }
-
-    .hero-left .round {
-        max-width: 70%;
-    }
-
-    .iphone {
+    /* Download */
+    .download{
         display: none;
     }
+
+    /* Footer */
+    .footer-pera{
+        font-size: 0.87rem;
+    }
+    .footer-links{
+        font-size: 0.75rem;
+    }
+
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
 
+    /* main benner */
 
-@media (max-width: 992px) {
-    .hero {
-        height: 31.25rem;
+    .benner-wrreper {
+        height: 34.37rem;
     }
 
-    .hero-left .burger {
-        max-width: 100%;
-    }
-
-    .hero-left .round {
-        max-width: 70%;
-    }
-
-    .iphone {
+    .nav-links,
+    .nav-vectors {
         display: none;
     }
+
+    .menu-toggler {
+        display: flex;
+    }
+    .hero-right {
+        margin-top: 11.87rem;
+    }
+
+    .hero-right>a {
+        margin-bottom: 2.5rem;
+    }
+
+    .hero-right a>img {
+        width: 1rem;
+    }
+
+    .hero-right a>span {
+        font-size: 1rem;
+    }
+
+    .heading {
+        font-size: 1.87rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .benner-pera {
+        font-size: 0.75rem;
+        margin-bottom: 1.56rem;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-bottom: 2.18rem;
+    }
+
+    .search-bar input {
+        font-size: 0.75rem;
+        height: 2.5rem;
+    }
+
+    .search-bar img {
+        left: 63%;
+        height: 1.87rem;
+        width: 1.87rem;
+    }
+
+    .rating img {
+        width: 1.56rem;
+    }
+
+    .rating>p {
+        font-size: 0.87rem;
+    }
+
+    .trust-badge p{
+        right: 3.12rem;
+        font-size: 0.62rem;
+    }
+
+    .hero-left {
+        top: 21.25rem;
+        width: 4.37rem;
+        height: 6.62rem;
+    }
+    .hero-left .burger{
+        width: 21.87rem;
+    }
+    .hero-left .round{
+        width: 15rem;
+    }
+
+    /* Exclusive */
+
+    .exclusive h2 {
+        font-size: 1.12rem;
+        margin-bottom: 0.93rem;
+        margin-top: 2.37rem;
+    }
+
+    .exclusive>p,
+    .food-box span,
+    .swiper-slide h3 {
+        font-size: 0.87rem;
+    }
+
+    .foods {
+        margin-bottom: 2.5rem;
+    }
+
+    .swiper-slide img {
+        width: 7.81rem;
+    }
+
+    .swiper-slide p {
+        font-size: 0.62rem;
+        width: 11.25rem;
+    }
+
+    .swiper-slide button {
+        font-size: 0.93rem;
+        width: 5.93rem;
+        padding: 0.18rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        --swiper-navigation-size: 1.75rem;
+        --swiper-navigation-top-offset: 30%;
+        --swiper-navigation-sides-offset: 0px;
+    }
+
+    /* serve */
+
+    .serve-wrepper>p{
+        font-size: 0.93rem;
+    }
+    .serve-wrepper h2{
+        font-size: 1.25rem;
+        margin-bottom: 0px;
+    }
+    .serve-pera{
+        display: none;
+    }
+    
+    .serve-card img{
+        width: 8.75rem;
+    }
+    .serve-card h3{
+        font-size: 1.12rem;
+    }
+    .serve-card p{
+        font-size: 0.62rem;
+    }
+
+    /* Download */
+    .download{
+        display: none;
+    }
+
+    /* Footer */
+    .footer-pera{
+        font-size: 0.87rem;
+    }
+    .footer-links{
+        font-size: 0.68rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    /* main benner */
+
+    .benner-wrreper {
+        height: 36.25rem;
+    }
+
+    .nav-links,
+    .nav-vectors {
+        display: none;
+    }
+
+    .menu-toggler {
+        display: flex;
+    }
+    .hero-right {
+        margin-top: 11.87rem;
+    }
+
+    .hero-right>a {
+        margin-bottom: 2.5rem;
+    }
+
+    .hero-right a>img {
+        width: 1rem;
+    }
+
+    .hero-right a>span {
+        font-size: 1.12rem;
+    }
+
+    .heading {
+        font-size: 3.12rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .benner-pera {
+        font-size: 1rem;
+        margin-bottom: 1.56rem;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-bottom: 2.18rem;
+    }
+
+    .search-bar input {
+        font-size: 1rem;
+        height: 2.5rem;
+    }
+
+    .search-bar img {
+        left: 65%;
+        height: 1.87rem;
+        width: 1.87rem;
+    }
+
+    .rating img {
+        width: 1.87rem;
+    }
+
+    .rating>p {
+        font-size: 1rem;
+    }
+
+    .trust-badge p{
+        right: 3.12rem;
+        font-size: 0.75rem;
+    }
+
+    .hero-left {
+        top: 23.75rem;
+        width: 5rem;
+        height: 6.62rem;
+    }
+    .hero-left .burger{
+        width: 26.25rem;
+    }
+    .hero-left .round{
+        width: 17.5rem;
+    }
+
+    /* Exclusive */
+
+    .exclusive h2 {
+        font-size: 1.75rem;
+        margin-bottom: 0.93rem;
+        margin-top: 2.37rem;
+    }
+
+    .exclusive>p,
+    .food-box span,
+    .swiper-slide h3 {
+        font-size: 1rem;
+    }
+
+    .foods {
+        margin-bottom: 2.5rem;
+    }
+
+    .swiper-slide img {
+        width: 9.68rem;
+    }
+
+    .swiper-slide p {
+        font-size: 0.62rem;
+        width: 11.87rem;
+    }
+
+    .swiper-slide button {
+        font-size: 1.12rem;
+        width: 6.56rem;
+        padding: 0.24rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        --swiper-navigation-size: 1.87rem;
+        --swiper-navigation-top-offset: 30%;
+        --swiper-navigation-sides-offset: 0px;
+    }
+
+    /* serve */
+
+    .serve-wrepper>p{
+        font-size: 1rem;
+    }
+    .serve-wrepper h2{
+        font-size: 1.75rem;
+        margin-bottom: 0px;
+    }
+    .serve-pera{
+        display: none;
+    }
+    
+    .serve-card img{
+        width: 15.62rem;
+    }
+    .serve-card h3{
+        font-size: 1.25rem;
+    }
+    .serve-card p{
+        font-size: 0.62rem;
+    }
+
+    /* Download */
+    .download{
+        display: none;
+    }
+
+    /* Footer */
+    .footer-pera{
+        font-size: 0.87rem;
+    }
+    .footer-links{
+        font-size: 0.75rem;
+    }
+
 }
 
 
-@media (max-width: 1200px) {
-    .hero {
-        height: 31.25rem;
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+    /* main benner */
+
+    .benner-wrreper {
+        height: 43.75rem;
     }
 
-    .hero-left .burger {
-        max-width: 100%;
+    .hero-right {
+        margin-top: 12.5rem;
     }
 
-    .hero-left .round {
-        max-width: 70%;
+    .hero-right>a {
+        margin-bottom: 3.12rem;
+    }
+
+    .hero-right a>img {
+        width: 1.12rem;
+    }
+
+    .hero-right a>span {
+        font-size: 1.25rem;
+    }
+
+    .heading {
+        font-size: 3.75rem;
+        margin-bottom: 1.87rem;
+    }
+
+    .benner-pera {
+        font-size: 1.12rem;
+        margin-bottom: 2.18rem;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-bottom: 2.81rem;
+    }
+
+    .search-bar input {
+        font-size: 1.12rem;
+        height: 3.12rem;
+    }
+
+    .search-bar img {
+        left: 65%;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .rating img {
+        width: 2.18rem;
+    }
+
+    .rating>p {
+        font-size: 1.12rem;
+    }
+
+    .trust-badge p{
+        right: 3.12rem;
+        font-size: 0.87rem;
+    }
+
+    .hero-left {
+        top: 28.75rem;
+        width: 5rem;
+        height: 6.62rem;
+    }
+    .hero-left .burger{
+        width: 32.5rem;
+    }
+    .hero-left .round{
+        width: 21.56rem;
+    }
+
+    /* Exclusive */
+
+    .exclusive h2 {
+        font-size: 2.18rem;
+        margin-bottom: 1.12rem;
+        margin-top: 2.5rem;
+    }
+
+    .exclusive>p,
+    .food-box span,
+    .swiper-slide h3 {
+        font-size: 1rem;
+    }
+
+    .foods {
+        margin-bottom: 2.81rem;
+    }
+
+    .swiper-slide img {
+        width: 12.5rem;
+    }
+
+    .swiper-slide p {
+        font-size: 0.75rem;
+        width: 14.37rem;
+    }
+
+    .swiper-slide button {
+        font-size: 1.25rem;
+        width: 7.5rem;
+        padding: 0.31rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        --swiper-navigation-size: 2.18rem;
+        --swiper-navigation-top-offset: 30%;
+        --swiper-navigation-sides-offset: 0px;
+    }
+
+    /* serve */
+
+    .serve-wrepper>p{
+        font-size: 1.12rem;
+    }
+    .serve-wrepper h2{
+        font-size: 2.18rem;
+    }
+    
+    .serve-card img{
+        width: 15.62rem;
+    }
+    .serve-card h3{
+        font-size: 1.37rem;
+    }
+    .serve-card p{
+        font-size: 0.75rem;
+    }
+
+    /* Footer */
+    .footer-pera{
+        font-size: 1rem;
+    }
+    .footer-links{
+        font-size: 0.87rem;
     }
 }
 
+@media (min-width: 1400px) {
 
-@media (max-width: 1400px) {
-    .hero {
-        height: 31.25rem;
-    }
-
-    .hero-left .burger {
-        max-width: 100%;
-    }
-
-    .hero-left .round {
-        max-width: 70%;
-    }
+    
 }
